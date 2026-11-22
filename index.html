@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Royal Kitchen — Authentic Indian Cuisine in Kanpur. Tradition, served beautifully. (Demo Project)">
+
+    <title>The Royal Kitchen | Tradition, Served Beautifully</title>
+
+    <!-- Google Fonts: Plus Jakarta Sans (Headings) & Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet located in css/ -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Royal Kitchen Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+</head>
+
+<body>
+    <!-- 
+      NOTE: This is a fictional restaurant demonstration project for web development learning.
+      All menu prices, operating hours, addresses, culinary claims, and testimonials are for demo purposes.
+    -->
+
+    <!-- ================================================================
+         HEADER & PRIMARY NAVIGATION
+         ================================================================ -->
+    <header class="site-header" id="site-header">
+        <div class="container header-container">
+            <a href="#hero-section" class="brand-logo" aria-label="The Royal Kitchen - Return to top">
+                <span class="brand-name">THE ROYAL KITCHEN</span>
+                <span class="brand-tag">KANPUR</span>
+            </a>
+
+            <!-- Primary Navigation Links -->
+            <nav class="primary-nav" id="primary-navigation" aria-label="Primary site navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#hero-section" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#signature-section" class="nav-link">Signature</a></li>
+                    <li class="nav-item"><a href="#story-section" class="nav-link">Our Story</a></li>
+                    <li class="nav-item"><a href="#menu-section" class="nav-link">Menu</a></li>
+                </ul>
+                <!-- Mobile Drawer CTA -->
+                <div class="mobile-drawer-cta">
+                    <button type="button" class="btn btn-primary demo-btn" data-action="reserve">
+                        Reserve Table <span class="btn-demo-badge">(Demo)</span>
+                    </button>
+                </div>
+            </nav>
+
+            <!-- Header Actions -->
+            <div class="header-actions">
+                <button type="button" class="btn btn-primary header-reserve-btn demo-btn" data-action="reserve">
+                    Reserve Table <span class="btn-demo-badge">(Demo)</span>
+                </button>
+                <button type="button" class="mobile-nav-toggle" id="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation menu">
+                    <span class="hamburger-bar" aria-hidden="true"></span>
+                    <span class="hamburger-bar" aria-hidden="true"></span>
+                    <span class="hamburger-bar" aria-hidden="true"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ================================================================
+             SECTION 1: CINEMATIC HERO SECTION
+             ================================================================ -->
+        <section class="hero-section" id="hero-section" aria-labelledby="hero-heading">
+            <div class="container hero-grid">
+                <!-- Left Column: Story & Actions -->
+                <div class="hero-content">
+                    <span class="text-tagline">
+                        <span class="tagline-dot"></span> Tradition, Served Beautifully • Kanpur
+                    </span>
+                    <h1 id="hero-heading" class="hero-title">Authentic Indian dining, cooked with patience and heart.</h1>
+                    <p class="hero-description">
+                        Welcome to The Royal Kitchen. In the heart of Kanpur, we honor slow-food culinary rituals—cooking with cold-pressed oils, freshly ground spices, and unhurried hospitality.
+                    </p>
+
+                    <!-- Reusable Button System (Demonstration Mode) -->
+                    <div class="btn-group hero-buttons" role="group" aria-label="Demonstration action buttons">
+                        <button type="button" class="btn btn-primary demo-btn" data-action="reserve">
+                            Reserve a Table <span class="btn-demo-badge">(Demo)</span>
+                        </button>
+                        <a href="#menu-section" class="btn btn-secondary" id="hero-explore-menu-btn">
+                            Explore Menu
+                        </a>
+                    </div>
+
+                    <!-- Micro-Highlights (Demo Content) -->
+                    <div class="hero-highlights">
+                        <span class="highlight-item">
+                            <span class="highlight-dot"></span> Authentic Awadhi Recipes
+                        </span>
+                        <span class="highlight-separator">•</span>
+                        <span class="highlight-item">
+                            <span class="highlight-dot"></span> Swaroop Nagar, Kanpur
+                        </span>
+                        <span class="highlight-separator">•</span>
+                        <span class="highlight-item">
+                            <span class="highlight-dot"></span> Fictional Demo Showcase
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Right Column: Visual Centerpiece -->
+                <div class="hero-visual">
+                    <div class="image-frame hero-frame">
+                        <img 
+                            src="assets/images/hero-dining.jpg" 
+                            alt="Warm Indian table setting with slow-cooked authentic dishes in artisanal ceramic bowls"
+                            class="responsive-image"
+                            width="560" 
+                            height="420"
+                            loading="eager"
+                        >
+                        <div class="image-badge">
+                            <span class="badge-text">Slow Cooking • Daily Prep</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             SECTION 2: SIGNATURE CHICKEN DISH SPOTLIGHT
+             ================================================================ -->
+        <section class="signature-section" id="signature-section" aria-labelledby="signature-heading">
+            <div class="container">
+                <div class="signature-card">
+                    <!-- Left Column: Editorial Dish Photography -->
+                    <div class="signature-visual">
+                        <div class="image-frame signature-frame">
+                            <img 
+                                src="assets/images/signature-chicken.jpg" 
+                                alt="Kalonji and Saffron Dum Murgh simmered in an earthenware dish garnished with fresh herbs"
+                                class="responsive-image"
+                                width="520" 
+                                height="400"
+                                loading="lazy"
+                            >
+                            <div class="image-badge">
+                                <span class="badge-text">Simmered 4 Hours (Concept)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Dish Narrative & Details -->
+                    <div class="signature-content">
+                        <span class="text-tagline">
+                            <span class="tagline-dot"></span> Signature Creation
+                        </span>
+                        <div class="dish-header">
+                            <h2 id="signature-heading" class="dish-title">Kalonji & Saffron Dum Murgh</h2>
+                            <div class="dish-price-tag">
+                                <span class="price-currency">₹</span>
+                                <span class="price-amount">495</span>
+                                <span class="price-demo">(Demo Price)</span>
+                            </div>
+                        </div>
+
+                        <p class="dish-description">
+                            Country chicken slow-simmered in stone-ground kalonji (nigella seeds), caramelized onion paste, and cold-pressed mustard oil, finished with a fragrant saffron infusion. Rich, comforting, and crafted with genuine care.
+                        </p>
+
+                        <div class="dish-note-box">
+                            <span class="note-label">Pairing suggestion:</span>
+                            <span class="note-text">Best enjoyed with our house sourdough garlic kulcha and fresh mint curd.</span>
+                        </div>
+
+                        <div class="signature-action">
+                            <button type="button" class="btn btn-dark demo-btn" data-action="dine-in">
+                                Dine-in Experience <span class="btn-demo-badge">(Demo)</span>
+                            </button>
+                        </div>
+
+                        <p class="demo-disclaimer-note">
+                            * Note: Dish concept, preparation notes, pricing, and restaurant details are fictional demonstration content for web design practice.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             SECTION 3: OUR STORY & CULINARY PHILOSOPHY
+             ================================================================ -->
+        <section class="story-section" id="story-section" aria-labelledby="story-heading">
+            <div class="container story-grid">
+                <!-- Left Column: Story Narrative -->
+                <div class="story-content">
+                    <span class="text-tagline">
+                        <span class="tagline-dot"></span> Our Heritage • Kanpur
+                    </span>
+                    <h2 id="story-heading" class="section-title">Born from family kitchens, crafted for today.</h2>
+                    
+                    <p class="story-paragraph">
+                        The Royal Kitchen began with a simple belief: the finest meals are never rushed. In Kanpur, food has always been a quiet language of warmth—generous, richly layered with spice, and shared across full family tables.
+                    </p>
+
+                    <p class="story-paragraph">
+                        We combine the patient dum cooking traditions of Awadh with the comforting familiarity of home-cooked meals. Rather than relying on heavy fats, excess cream, or artificial colors, our kitchen concept prioritizes time: allowing stone-ground spices to bloom in cold-pressed oils and gravies to develop depth through gentle simmering.
+                    </p>
+
+                    <blockquote class="story-quote">
+                        <p class="quote-text">
+                            “True hospitality isn't about grand palaces; it is the feeling of being welcomed into a home where someone spent hours cooking just for you.”
+                        </p>
+                        <cite class="quote-author">— The Royal Kitchen Philosophy (Demo Concept)</cite>
+                    </blockquote>
+                </div>
+
+                <!-- Right Column: Visual Craftsmanship -->
+                <div class="story-visual">
+                    <div class="image-frame story-frame">
+                        <img 
+                            src="assets/images/story-kitchen.jpg" 
+                            alt="Whole heirloom Indian spices including star anise, cinnamon bark, and cardamom in artisanal bowls in warm natural light"
+                            class="responsive-image"
+                            width="540" 
+                            height="440"
+                            loading="lazy"
+                        >
+                        <div class="image-badge">
+                            <span class="badge-text">Artisanal Spices • Craftsmanship</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             SECTION 4: WHAT MAKES US DIFFERENT (3 FEATURE CARDS)
+             ================================================================ -->
+        <section class="pillars-section" id="pillars-section" aria-labelledby="pillars-heading">
+            <div class="container">
+                <!-- Centered Section Header -->
+                <div class="section-header-center">
+                    <span class="text-tagline">
+                        <span class="tagline-dot"></span> Thoughtful Craft
+                    </span>
+                    <h2 id="pillars-heading" class="section-title">What shapes our cooking.</h2>
+                    <p class="section-subtitle">
+                        Three quiet commitments that define the culinary identity of our kitchen concept.
+                    </p>
+                </div>
+
+                <!-- 3-Column Feature Cards Grid -->
+                <div class="pillars-grid">
+                    <!-- Card 1 -->
+                    <article class="pillar-card" aria-label="Feature: Hand-Roasted Spices">
+                        <div class="pillar-marker">01 • DAILY PREP CONCEPT</div>
+                        <h3 class="pillar-title">Hand-Roasted Spices</h3>
+                        <p class="pillar-description">
+                            Whole cumin, coriander seeds, black cardamom, and mace toasted gently over low embers and stone-ground to preserve their natural essential oils and vibrant fragrance.
+                        </p>
+                        <div class="pillar-footer">
+                            <span class="pillar-pill">Stone-ground in small batches (Concept)</span>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="pillar-card" aria-label="Feature: Clay and Iron Slow Cooking">
+                        <div class="pillar-marker">02 • TRADITIONAL VESSELS</div>
+                        <h3 class="pillar-title">Clay & Iron Slow Cooking</h3>
+                        <p class="pillar-description">
+                            Porous unglazed clay handis and heavy cast-iron kadhais distribute heat slowly and evenly, sealing in natural moisture and imparting a subtle, rustic aroma.
+                        </p>
+                        <div class="pillar-footer">
+                            <span class="pillar-pill">Gentle heat retention (Concept)</span>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="pillar-card" aria-label="Feature: Unhurried Hospitality">
+                        <div class="pillar-marker">03 • THE EXPERIENCE</div>
+                        <h3 class="pillar-title">Unhurried Hospitality</h3>
+                        <p class="pillar-description">
+                            Dining is an occasion to savor, never a rushed transaction. Our dining room concept in Swaroop Nagar is designed for quiet comfort, where conversations naturally linger.
+                        </p>
+                        <div class="pillar-footer">
+                            <span class="pillar-pill">A peaceful dining concept in Swaroop Nagar</span>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Demo Content Disclaimer Note -->
+                <p class="demo-disclaimer-note text-center">
+                    * Disclaimer: The Royal Kitchen is a fictional restaurant demonstration project for web design learning. All culinary claims, ingredient sourcing, cooking methods, and location details are conceptual examples.
+                </p>
+            </div>
+        </section>
+
+        <!-- ================================================================
+             SECTION 5: THE INTERACTIVE FOOD MENU (24 DISHES)
+             ================================================================ -->
+        <section class="menu-section" id="menu-section" aria-labelledby="menu-heading">
+            <div class="container">
+                <!-- Centered Section Header -->
+                <div class="section-header-center">
+                    <span class="text-tagline">
+                        <span class="tagline-dot"></span> The Dastarkhwan
+                    </span>
+                    <h2 id="menu-heading" class="section-title">Authentic Indian Flavors</h2>
+                    <p class="section-subtitle">
+                        An equal celebration of authentic Awadhi vegetarian specialties and slow-simmered non-vegetarian classics.
+                    </p>
+                </div>
+
+                <!-- Interactive Accessible Filter Controls -->
+                <div class="menu-controls" role="region" aria-label="Menu Filter Controls">
+                    <!-- Semantic Fieldset for Dietary Preference Filtering -->
+                    <fieldset class="filter-fieldset">
+                        <legend class="filter-legend">Filter by Dietary Preference</legend>
+                        <div class="dietary-filter-group">
+                            <button type="button" class="filter-btn diet-btn active" data-diet="all" aria-pressed="true">
+                                All Dishes (24)
+                            </button>
+                            <button type="button" class="filter-btn diet-btn" data-diet="veg" aria-pressed="false">
+                                <span class="diet-icon-dot veg" aria-hidden="true"></span> Pure Vegetarian (12)
+                            </button>
+                            <button type="button" class="filter-btn diet-btn" data-diet="non-veg" aria-pressed="false">
+                                <span class="diet-icon-dot nonveg" aria-hidden="true"></span> Non-Vegetarian (12)
+                            </button>
+                        </div>
+                    </fieldset>
+
+                    <!-- Category Filter Group with Accessible Label -->
+                    <div class="category-filter-group" role="group" aria-label="Filter dishes by course category">
+                        <div class="category-filter-bar">
+                            <button type="button" class="filter-btn cat-btn active" data-category="all" aria-pressed="true">
+                                All Categories
+                            </button>
+                            <button type="button" class="filter-btn cat-btn" data-category="starters" aria-pressed="false">
+                                Starters & Kebabs
+                            </button>
+                            <button type="button" class="filter-btn cat-btn" data-category="veg-mains" aria-pressed="false">
+                                Vegetarian Mains
+                            </button>
+                            <button type="button" class="filter-btn cat-btn" data-category="nonveg-mains" aria-pressed="false">
+                                Non-Vegetarian Mains
+                            </button>
+                            <button type="button" class="filter-btn cat-btn" data-category="biryani" aria-pressed="false">
+                                Biryani & Rice
+                            </button>
+                            <button type="button" class="filter-btn cat-btn" data-category="breads" aria-pressed="false">
+                                Breads & Sides
+                            </button>
+                            <button type="button" class="filter-btn cat-btn" data-category="desserts" aria-pressed="false">
+                                Desserts & Drinks
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Screen Reader Announcement Area -->
+                    <div id="menu-live-status" class="sr-only" aria-live="polite">
+                        Showing all 24 dishes.
+                    </div>
+                </div>
+
+                <!-- 24-Dish Responsive Grid -->
+                <div class="menu-grid" id="menu-grid">
+                    <!-- CATEGORY 1: STARTERS & KEBABS (6 dishes: 2 Veg, 4 Non-Veg) -->
+                    <!-- Dish 1 -->
+                    <article class="menu-card" data-diet="veg" data-category="starters">
+                        <div class="menu-card-visual">
+                            <img src="assets/images/menu/paneer-malai-tikka.jpg" alt="Paneer Malai Tikka: grilled cottage cheese steeped in hung curd, green cardamom, and cashew paste" class="responsive-image" width="360" height="240" loading="lazy">
+                            <span class="diet-badge veg" title="Vegetarian Dish">
+                                <span class="diet-symbol-veg" aria-label="Vegetarian"></span>
+                            </span>
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-card-header">
+                                <h3 class="dish-name">Paneer Malai Tikka</h3>
+                                <span class="dish-card-price">₹365 <small>(Demo)</small></span>
+                            </div>
+                            <p class="dish-card-desc">
+                                Fresh cottage cheese steeped in hung curd, green cardamom, and cashew paste, lightly charred in the clay tandoor.
+                            </p>
+                            <div class="menu-card-footer">
+                                <span class="category-pill">Starters & Kebabs</span>
+                                <button type="button" class="btn-dish-preview demo-btn" data-action="preview-paneer-malai-tikka">Preview</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Dish 2 -->
+                    <article class="menu-card" data-diet="veg" data-category="starters">
+                        <div class="menu-card-visual">
+                            <img src="assets/images/menu/hara-bhara-kebab.jpg" alt="Hara Bhara Kebab Awadhi: pan-griddled spinach, green peas, and gram flour patties with spices" class="responsive-image" width="360" height="240" loading="lazy">
+                            <span class="diet-badge veg" title="Vegetarian Dish">
+                                <span class="diet-symbol-veg" aria-label="Vegetarian"></span>
+                            </span>
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-card-header">
+                                <h3 class="dish-name">Hara Bhara Kebab Awadhi</h3>
+                                <span class="dish-card-price">₹325 <small>(Demo)</small></span>
+                            </div>
+                            <p class="dish-card-desc">
+                                Pan-griddled patties of fresh spinach, green peas, and roasted gram flour seasoned with toasted cumin and dry mango.
+                            </p>
+                            <div class="menu-card-footer">
+                                <span class="category-pill">Starters & Kebabs</span>
+                                <button type="button" class="btn-dish-preview demo-btn" data-action="preview-hara-bhara-kebab">Preview</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Dish 3 -->
+                    <article class="menu-card" data-diet="non-veg" data-category="starters">
+                        <div class="menu-card-visual">
+                            <img src="assets/images/menu/murgh-bhatti-tikka.jpg" alt="Murgh Bhatti Tikka: boneless chicken thighs marinated in degi mirch and mustard oil, charred over charcoal" class="responsive-image" width="360" height="240" loading="lazy">
+                            <span class="diet-badge nonveg" title="Non-Vegetarian Dish">
+                                <span class="diet-symbol-veg" aria-label="Non-Vegetarian"></span>
+                            </span>
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-card-header">
+                                <h3 class="dish-name">Murgh Bhatti Tikka</h3>
+                                <span class="dish-card-price">₹425 <small>(Demo)</small></span>
+                            </div>
+                            <p class="dish-card-desc">
+                                Boneless country chicken thighs marinated in degi mirch, pounded coriander, and mustard oil, charred over charcoal.
+                            </p>
+                            <div class="menu-card-footer">
+                                <span class="category-pill">Starters & Kebabs</span>
+                                <button type="button" class="btn-dish-preview demo-btn" data-action="preview-murgh-bhatti-tikka">Preview</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Dish 4 -->
+                    <article class="menu-card" data-diet="non-veg" data-category="starters">
+                        <div class="menu-card-visual">
+                            <img src="assets/images/menu/nawabi-galawati-kebab.jpg" alt="Nawabi Galawati Kebab: finely minced mutton infused with potli spices and raw green papaya" class="responsive-image" width="360" height="240" loading="lazy">
+                            <span class="diet-badge nonveg" title="Non-Vegetarian Dish">
+                                <span class="diet-symbol-veg" aria-label="Non-Vegetarian"></span>
+                            </span>
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-card-header">
+                                <h3 class="dish-name">Nawabi Galawati Kebab</h3>
+                                <span class="dish-card-price">₹485 <small>(Demo)</small></span>
+                            </div>
+                            <p class="dish-card-desc">
+                                Finely minced mutton infused with 32 potli spices and raw green papaya, pan-seared to melt smoothly on the palate.
+                            </p>
+                            <div class="menu-card-footer">
+                                <span class="category-pill">Starters & Kebabs</span>
+                                <button type="button" class="btn-dish-preview demo-btn" data-action="preview-galawati-kebab">Preview</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Dish 5 -->
+                    <article class="menu-card" data-diet="non-veg" data-category="starters">
+                        <div class="menu-card-visual">
+                            <img src="assets/images/menu/kakori-mutton-seekh.jpg" alt="Kakori Mutton Seekh: spiced minced lamb skewered and roasted over open coals with butter and rose essence" class="responsive-image" width="360" height="240" loading="lazy">
+                            <span class="diet-badge nonveg" title="Non-Vegetarian Dish">
+                                <span class="diet-symbol-veg" aria-label="Non-Vegetarian"></span>
+                            </span>
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-card-header">
+                                <h3 class="dish-name">Kakori Mutton Seekh</h3>
+                                <span class="dish-card-price">₹495 <small>(Demo)</small></span>
+                            </div>
+                            <p class="dish-card-desc">
+                                Spiced minced lamb skewered and roasted over open coals, basted with cultured butter and rose petal essence.
+                            </p>
+                            <div class="menu-card-footer">
+                                <span class="category-pill">Starters & Kebabs</span>
+                                <button type="button" class="btn-dish-preview demo-btn" data-action="preview-kakori-seekh">Preview</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Dish 6 -->
+                    <article class="menu-card" data-diet="non-veg" data-category="starters">
+                        <div class="menu-card-visual">
+                            <img src="assets/images/menu/amritsari-fish-tikka.jpg" alt="Amritsari Ajwaini Fish Tikka: fresh river sole fillets marinated in carom seeds, yellow mustard, and chickpea flour" class="responsive-image" width="360" height="240" loading="lazy">
+                            <span class="diet-badge nonveg" title="Non-Vegetarian Dish">
+                                <span class="diet-symbol-veg" aria-label="Non-Vegetarian"></span>
+                            </span>
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-card-header">
+                                <h3 class="dish-name">Amritsari Ajwaini Fish Tikka</h3>
+                                <span class="dish-card-price">₹465 <small>(Demo)</small></span>
+                            </div>
+                            <p class="dish-card-desc">
+                                Fresh river sole fillets marinated in carom seeds, yellow mustard, and chickpea flour, crisped over high heat.
+                            </p>
+                            <div class="menu-card-footer">
+                                <span class="category-pill">Starters & Kebabs</span>
+                                <button type="button" class="btn-dish-preview demo-btn" data-action="preview-fish-tikka">Preview</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- CATEGORY 2: VEGETARIAN MAIN COURSE (4 dishes: 4 Veg) -->
+                    <!-- Dish 7 -->
+                    <article class="menu-card" data-diet="veg" data-category="veg-mains">
+                        <div class="menu-card-visual">
+                            <img src="assets/images/menu/dal-bukhara.jpg" alt="Dal Bukhara: whole black lentils slow-cooked overnight over gentle embers with churned butter and tomato reduction" class="responsive-image" width="360" height="240" loading="lazy">
+                            <span class="diet-badge veg" title="Vegetarian Dish">
+                                <span class="diet-symbol-veg" aria-label="Vegetarian"></span>
+                            </span>
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-card-header">
+                                <h3 class="dish-name">Dal Bukhara Slow-Simmered</h3>
+                                <span class="dish-card-price">₹385 <small>(Demo)</small></span>
+                            </div>
+                            <p class="dish-card-desc">
+                                Whole black lentils slow-cooked overnight over gentle embers with churned butter and fresh tomato reduction.
+                            </p>
+                            <div class="menu-card-footer">
+                                <span class="category-pill">Vegetarian Mains</span>
+                                <button type="button" class="btn-dish-preview demo-btn" data-action="preview-dal-bukhara">Preview</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Dish 8 -->
+                    <article class="menu-card" data-diet="veg" data-category="veg-mains">
+                        <div class="menu-card-visual">
+                            <img src="assets/images/menu/paneer-lababdar.jpg" alt="Paneer Lababdar: grated and diced cottage cheese in a velvety roasted plum tomato and melon seed gravy" class="responsive-image" width="360" height="240" loading="lazy">
+                            <span class="diet-badge veg" title="Vegetarian Dish">
+                                <span class="diet-symbol-veg" aria-label="Vegetarian"></span>
+                            </span>
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-card-header">
+                                <h3 class="dish-name">Paneer Lababdar</h3>
+                                <span class="dish-card-price">₹415 <small>(Demo)</small></span>
+                            </div>
+                            <p class="dish-card-desc">
+                                Grated and diced paneer in a velvety gravy of roasted plum tomatoes, melon seed paste, and crushed kasoori methi.
+                            </p>
+                            <div class="menu-card-footer">
+                                <span class="category-pill">Vegetarian Mains</span>
+                                <button type="button" class="btn-dish-preview demo-btn" data-action="preview-paneer-lababdar">Preview</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Dish 9 -->
+                    <article class="menu-card" data-diet="veg" data-category="veg-mains">
+                        <div class="menu-card-visual">
+                            <img src="assets/images/menu/dum-aloo-awadhi.jpg" alt="Dum Aloo Awadhi: baby potatoes crisped in mustard oil and simmered in a spiced yogurt and fennel reduction" class="responsive-image" width="360" height="240" loading="lazy">
+                            <span class="diet-badge veg" title="Vegetarian Dish">
+                                <span class="diet-symbol-veg" aria-label="Vegetarian"></span>
+                            </span>
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-card-header">
+                                <h3 class="dish-name">Dum Aloo Awadhi</h3>
+                                <span class="dish-card-price">₹345 <small>(Demo)</small></span>
+                            </div>
+                            <p class="dish-card-desc">
+                                Baby potatoes pricked, crisped in mustard oil, and simmered on gentle dum in a spiced yogurt and fennel reduction.
+                            </p>
+                            <div class="menu-card-footer">
+                                <span class="category-pill">Vegetarian Mains</span>
+                                <button type="button" class="btn-dish-preview demo-btn" data-action="preview-dum-aloo">Preview</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Dish 10 -->
+                    <article class="menu-card" data-diet="veg" data-category="veg-mains">
+                        <div class="menu-card-visual">
+                            <img src="assets/images/menu/subz-handi-nizami.jpg" alt="Subz Handi Nizami: seasonal garden vegetables braised in earthenware with almond paste, green cardamom, and saffron" class="responsive-image" width="360" height="240" loading="lazy">
+                            <span class="diet-badge veg" title="Vegetarian Dish">
+                                <span class="diet-symbol-veg" aria-label="Vegetarian"></span>
+                            </span>
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-card-header">
+                                <h3 class="dish-name">Subz Handi Nizami</h3>
+                                <span class="dish-card-price">₹375 <small>(Demo)</small></span>
+                            </div>
+                            <p class="dish-card-desc">
+                                Seasonal garden vegetables braised in an earthenware pot with toasted almond paste, green cardamom, and saffron.
+                            </p>
+                            <div class="menu-card-footer">
+                                <span class="category-pill">Vegetarian Mains</span>
+                                <button type="button" class="btn-dish-preview demo-btn" data-action="preview-subz-handi">Preview</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- CATEGORY 3: NON-VEGETARIAN MAIN COURSE (6 dishes: 6 Non-Veg) -->
+                    <!-- Dish 11 -->
+                    <article class="menu-card" data-diet="non-veg" data-category="nonveg-mains">
+                        <div class="menu-card-visual">
+                            <img src="assets/images/menu/kalonji-dum-murgh.jpg" alt="Kalonji & Saffron Dum Murgh: country chicken simmered in stone-ground kalonji, caramelized onion paste, and saffron" class="responsive-image" width="360" height="240" loading="lazy">
+                            <span class="diet-badge nonveg" title="Non-Vegetarian Dish">
+                                <span class="diet-symbol-veg" aria-label="Non-Vegetarian"></span>
+                            </span>
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-card-header">
+                                <h3 class="dish-name">Kalonji & Saffron Dum Murgh</h3>
+                                <span class="dish-card-price">₹495 <small>(Demo)</small></span>
+                            </div>
+                            <p class="dish-card-desc">
+                                Signature dish: Country chicken simmered for four hours in stone-ground kalonji, caramelized onion paste, and saffron.
+                            </p>
+                            <div class="menu-card-footer">
+                                <span class="category-pill">Non-Vegetarian Mains</span>
+                                <button type="button" class="btn-dish-preview demo-btn" data-action="preview-kalonji-dum-murgh">Preview</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Dish 12 -->
+                    <article class="menu-card" data-diet="non-veg" data-category="nonveg-mains">
+                        <div class="menu-card-visual">
+                            <img src="assets/images/menu/awadhi-murgh-korma.jpg" alt="Awadhi Murgh Korma: bone-in chicken simmered in a silky golden gravy of roasted brown onions, yogurt, and kewra" class="responsive-image" width="360" height="240" loading="lazy">
+                            <span class="diet-badge nonveg" title="Non-Vegetarian Dish">
+                                <span class="diet-symbol-veg" aria-label="Non-Vegetarian"></span>
+                            </span>
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-card-header">
+                                <h3 class="dish-name">Awadhi Murgh Korma</h3>
+                                <span class="dish-card-price">₹465 <small>(Demo)</small></span>
+                            </div>
+                            <p class="dish-card-desc">
+                                Bone-in chicken simmered in a silky golden gravy of roasted brown onions, yogurt, green cardamom, and kewra water.
+                            </p>
+                            <div class="menu-card-footer">
+                                <span class="category-pill">Non-Vegetarian Mains</span>
+                                <button type="button" class="btn-dish-preview demo-btn" data-action="preview-murgh-korma">Preview</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Dish 13 -->
+                    <article class="menu-card" data-diet="non-veg" data-category="nonveg-mains">
+                        <div class="menu-card-visual">
+                            <img src="assets/images/menu/gosht-rogan-josh.jpg" alt="Nawabi Gosht Rogan Josh: tender mutton shanks infused with ratan jot, dried Kashmiri red chilies, and whole spices" class="responsive-image" width="360" height="240" loading="lazy">
+                            <span class="diet-badge nonveg" title="Non-Vegetarian Dish">
+                                <span class="diet-symbol-veg" aria-label="Non-Vegetarian"></span>
+                            </span>
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-card-header">
+                                <h3 class="dish-name">Nawabi Gosht Rogan Josh</h3>
+                                <span class="dish-card-price">₹545 <small>(Demo)</small></span>
+                            </div>
+                            <p class="dish-card-desc">
+                                Tender mutton shanks infused with ratan jot (natural alkanet root), dried Kashmiri red chilies, and whole spices.
+                            </p>
+                            <div class="menu-card-footer">
+                                <span class="category-pill">Non-Vegetarian Mains</span>
+                                <button type="button" class="btn-dish-preview demo-btn" data-action="preview-rogan-josh">Preview</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Dish 14 -->
+                    <article class="menu-card" data-diet="non-veg" data-category="nonveg-mains">
+                        <div class="menu-card-visual">
+                            <img src="assets/images/menu/awadhi-nihari-gosht.jpg" alt="Awadhi Nihari Gosht: slow-braised lamb shanks simmered overnight with bone marrow broth, fennel, and ginger juliennes" class="responsive-image" width="360" height="240" loading="lazy">
+                            <span class="diet-badge nonveg" title="Non-Vegetarian Dish">
+                                <span class="diet-symbol-veg" aria-label="Non-Vegetarian"></span>
+                            </span>
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-card-header">
+                                <h3 class="dish-name">Awadhi Nihari Gosht</h3>
+                                <span class="dish-card-price">₹575 <small>(Demo)</small></span>
+                            </div>
+                            <p class="dish-card-desc">
+                                Slow-braised lamb shanks simmered overnight with bone marrow broth, roasted fennel, ginger, and cracked black pepper.
+                            </p>
+                            <div class="menu-card-footer">
+                                <span class="category-pill">Non-Vegetarian Mains</span>
+                                <button type="button" class="btn-dish-preview demo-btn" data-action="preview-nihari-gosht">Preview</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Dish 15 -->
+                    <article class="menu-card" data-diet="non-veg" data-category="nonveg-mains">
+                        <div class="menu-card-visual">
+                            <img src="assets/images/menu/river-sole-machhi-curry.jpg" alt="River Sole Machhi Curry: tender river sole poached in fragrant mustard, kalonji, and tomato reduction in a clay bowl" class="responsive-image" width="360" height="240" loading="lazy">
+                            <span class="diet-badge nonveg" title="Non-Vegetarian Dish">
+                                <span class="diet-symbol-veg" aria-label="Non-Vegetarian"></span>
+                            </span>
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-card-header">
+                                <h3 class="dish-name">River Sole Machhi Curry</h3>
+                                <span class="dish-card-price">₹495 <small>(Demo)</small></span>
+                            </div>
+                            <p class="dish-card-desc">
+                                Tender river sole poached in a tangy, fragrant mustard and tomato reduction with fresh curry leaves and green chilies.
+                            </p>
+                            <div class="menu-card-footer">
+                                <span class="category-pill">Non-Vegetarian Mains</span>
+                                <button type="button" class="btn-dish-preview demo-btn" data-action="preview-machhi-curry">Preview</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Dish 16 -->
+                    <article class="menu-card" data-diet="non-veg" data-category="nonveg-mains">
+                        <div class="menu-card-visual">
+                            <img src="assets/images/menu/tawa-jhinga-masala.jpg" alt="Tawa Jhinga Masala: plump curled river prawns tossed in thick spicy red-amber onion-tomato masala in an ornate brass kadai" class="responsive-image" width="360" height="240" loading="lazy">
+                            <span class="diet-badge nonveg" title="Non-Vegetarian Dish">
+                                <span class="diet-symbol-veg" aria-label="Non-Vegetarian"></span>
+                            </span>
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-card-header">
+                                <h3 class="dish-name">Tawa Jhinga Masala</h3>
+                                <span class="dish-card-price">₹585 <small>(Demo)</small></span>
+                            </div>
+                            <p class="dish-card-desc">
+                                Fresh prawns tossed on a heavy iron griddle with crushed coriander seeds, caramelized garlic, and roasted bell peppers.
+                            </p>
+                            <div class="menu-card-footer">
+                                <span class="category-pill">Non-Vegetarian Mains</span>
+                                <button type="button" class="btn-dish-preview demo-btn" data-action="preview-tawa-jhinga">Preview</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- CATEGORY 4: BIRYANI & RICE (4 dishes: 2 Veg, 2 Non-Veg) -->
+                    <!-- Dish 17 -->
+                    <article class="menu-card" data-diet="veg" data-category="biryani">
+                        <div class="menu-card-visual">
+                            <img src="assets/images/menu/tarkari-dum-biryani.jpg" alt="Nawabi Tarkari Dum Biryani: fragrant aged basmati rice layered with spiced garden vegetables, mint leaves, and saffron milk" class="responsive-image" width="360" height="240" loading="lazy">
+                            <span class="diet-badge veg" title="Vegetarian Dish">
+                                <span class="diet-symbol-veg" aria-label="Vegetarian"></span>
+                            </span>
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-card-header">
+                                <h3 class="dish-name">Nawabi Tarkari Dum Biryani</h3>
+                                <span class="dish-card-price">₹395 <small>(Demo)</small></span>
+                            </div>
+                            <p class="dish-card-desc">
+                                Fragrant aged basmati rice layered with spiced garden vegetables, mint leaves, and saffron milk in a dough-sealed pot.
+                            </p>
+                            <div class="menu-card-footer">
+                                <span class="category-pill">Biryani & Rice</span>
+                                <button type="button" class="btn-dish-preview demo-btn" data-action="preview-tarkari-biryani">Preview</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Dish 18 -->
+                    <article class="menu-card" data-diet="veg" data-category="biryani">
+                        <div class="menu-card-visual">
+                            <img src="assets/images/menu/saffron-jeera-pulao.jpg" alt="Saffron Jeera Pulao: long-grain basmati rice tempered with roasted royal cumin seeds, cloves, and saffron infusion" class="responsive-image" width="360" height="240" loading="lazy">
+                            <span class="diet-badge veg" title="Vegetarian Dish">
+                                <span class="diet-symbol-veg" aria-label="Vegetarian"></span>
+                            </span>
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-card-header">
+                                <h3 class="dish-name">Saffron Jeera Pulao</h3>
+                                <span class="dish-card-price">₹245 <small>(Demo)</small></span>
+                            </div>
+                            <p class="dish-card-desc">
+                                Long-grain basmati rice tempered with roasted royal cumin seeds, whole cloves, and a delicate saffron infusion.
+                            </p>
+                            <div class="menu-card-footer">
+                                <span class="category-pill">Biryani & Rice</span>
+                                <button type="button" class="btn-dish-preview demo-btn" data-action="preview-jeera-pulao">Preview</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Dish 19 -->
+                    <article class="menu-card" data-diet="non-veg" data-category="biryani">
+                        <div class="menu-card-visual">
+                            <img src="assets/images/menu/murgh-dum-biryani.jpg" alt="Awadhi Murgh Dum Biryani: marinated chicken and aged basmati rice cooked on charcoal dum with golden brown onions and ghee" class="responsive-image" width="360" height="240" loading="lazy">
+                            <span class="diet-badge nonveg" title="Non-Vegetarian Dish">
+                                <span class="diet-symbol-veg" aria-label="Non-Vegetarian"></span>
+                            </span>
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-card-header">
+                                <h3 class="dish-name">Awadhi Murgh Dum Biryani</h3>
+                                <span class="dish-card-price">₹475 <small>(Demo)</small></span>
+                            </div>
+                            <p class="dish-card-desc">
+                                Marinated chicken and aged basmati rice cooked on slow charcoal dum with golden brown onions, kewra, and desi ghee.
+                            </p>
+                            <div class="menu-card-footer">
+                                <span class="category-pill">Biryani & Rice</span>
+                                <button type="button" class="btn-dish-preview demo-btn" data-action="preview-murgh-biryani">Preview</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Dish 20 -->
+                    <article class="menu-card" data-diet="non-veg" data-category="biryani">
+                        <div class="menu-card-visual">
+                            <img src="assets/images/menu/gosht-dum-biryani.jpg" alt="Gosht Dum Biryani: succulent lamb cuts and basmati rice slow-cooked in sealed earthen pots with mace and cardamom" class="responsive-image" width="360" height="240" loading="lazy">
+                            <span class="diet-badge nonveg" title="Non-Vegetarian Dish">
+                                <span class="diet-symbol-veg" aria-label="Non-Vegetarian"></span>
+                            </span>
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-card-header">
+                                <h3 class="dish-name">Gosht Dum Biryani</h3>
+                                <span class="dish-card-price">₹565 <small>(Demo)</small></span>
+                            </div>
+                            <p class="dish-card-desc">
+                                Succulent lamb cuts and basmati rice slow-cooked in sealed earthen pots with mace, star anise, and whole cardamom.
+                            </p>
+                            <div class="menu-card-footer">
+                                <span class="category-pill">Biryani & Rice</span>
+                                <button type="button" class="btn-dish-preview demo-btn" data-action="preview-gosht-biryani">Preview</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- CATEGORY 5: BREADS & ACCOMPANIMENTS (2 dishes: 2 Veg) -->
+                    <!-- Dish 21 -->
+                    <article class="menu-card" data-diet="veg" data-category="breads">
+                        <div class="menu-card-visual">
+                            <img src="assets/images/menu/garlic-butter-naan.jpg" alt="Garlic Butter Naan: hand-stretched refined wheat bread slapped onto tandoor wall, brushed with butter and garlic" class="responsive-image" width="360" height="240" loading="lazy">
+                            <span class="diet-badge veg" title="Vegetarian Dish">
+                                <span class="diet-symbol-veg" aria-label="Vegetarian"></span>
+                            </span>
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-card-header">
+                                <h3 class="dish-name">Garlic Butter Naan</h3>
+                                <span class="dish-card-price">₹95 <small>(Demo)</small></span>
+                            </div>
+                            <p class="dish-card-desc">
+                                Hand-stretched refined wheat bread slapped onto the clay tandoor wall, brushed generously with cultured butter and garlic.
+                            </p>
+                            <div class="menu-card-footer">
+                                <span class="category-pill">Breads & Sides</span>
+                                <button type="button" class="btn-dish-preview demo-btn" data-action="preview-garlic-naan">Preview</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Dish 22 -->
+                    <article class="menu-card" data-diet="veg" data-category="breads">
+                        <div class="menu-card-visual">
+                            <img src="assets/images/menu/burani-garlic-raita.jpg" alt="Burani Garlic Raita: thick chilled curd whipped with golden roasted garlic cloves, roasted cumin, and Himalayan rock salt" class="responsive-image" width="360" height="240" loading="lazy">
+                            <span class="diet-badge veg" title="Vegetarian Dish">
+                                <span class="diet-symbol-veg" aria-label="Vegetarian"></span>
+                            </span>
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-card-header">
+                                <h3 class="dish-name">Burani Garlic Raita</h3>
+                                <span class="dish-card-price">₹145 <small>(Demo)</small></span>
+                            </div>
+                            <p class="dish-card-desc">
+                                Thick chilled curd whipped with golden roasted garlic cloves, roasted cumin powder, and Himalayan rock salt.
+                            </p>
+                            <div class="menu-card-footer">
+                                <span class="category-pill">Breads & Sides</span>
+                                <button type="button" class="btn-dish-preview demo-btn" data-action="preview-burani-raita">Preview</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- CATEGORY 6: DESSERTS & DRINKS (2 dishes: 2 Veg) -->
+                    <!-- Dish 23 -->
+                    <article class="menu-card" data-diet="veg" data-category="desserts">
+                        <div class="menu-card-visual">
+                            <img src="assets/images/menu/shahi-tukda-rabdi.jpg" alt="Shahi Tukda with Rabdi: crisp ghee-toasted bread in saffron sugar syrup, blanketed with slow-reduced malai rabdi and pistachios" class="responsive-image" width="360" height="240" loading="lazy">
+                            <span class="diet-badge veg" title="Vegetarian Dish">
+                                <span class="diet-symbol-veg" aria-label="Vegetarian"></span>
+                            </span>
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-card-header">
+                                <h3 class="dish-name">Shahi Tukda with Rabdi</h3>
+                                <span class="dish-card-price">₹225 <small>(Demo)</small></span>
+                            </div>
+                            <p class="dish-card-desc">
+                                Crisp ghee-toasted bread steeped in warm saffron sugar syrup, blanketed with slow-reduced malai rabdi and toasted pistachios.
+                            </p>
+                            <div class="menu-card-footer">
+                                <span class="category-pill">Desserts & Drinks</span>
+                                <button type="button" class="btn-dish-preview demo-btn" data-action="preview-shahi-tukda">Preview</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Dish 24 -->
+                    <article class="menu-card" data-diet="veg" data-category="desserts">
+                        <div class="menu-card-visual">
+                            <img src="assets/images/menu/kesar-badam-thandai.jpg" alt="Kesar Badam Thandai: chilled full-cream milk blended with almonds, fennel seeds, black pepper, and pure saffron" class="responsive-image" width="360" height="240" loading="lazy">
+                            <span class="diet-badge veg" title="Vegetarian Dish">
+                                <span class="diet-symbol-veg" aria-label="Vegetarian"></span>
+                            </span>
+                        </div>
+                        <div class="menu-card-body">
+                            <div class="menu-card-header">
+                                <h3 class="dish-name">Kesar Badam Thandai</h3>
+                                <span class="dish-card-price">₹175 <small>(Demo)</small></span>
+                            </div>
+                            <p class="dish-card-desc">
+                                Chilled full-cream milk blended with hand-ground almonds, fennel seeds, watermelon seeds, black pepper, and pure saffron.
+                            </p>
+                            <div class="menu-card-footer">
+                                <span class="category-pill">Desserts & Drinks</span>
+                                <button type="button" class="btn-dish-preview demo-btn" data-action="preview-kesar-thandai">Preview</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Empty State (Shown when no dishes match selected filters) -->
+                <div class="menu-empty-state" id="menu-empty-state" hidden>
+                    <p class="empty-title">No dishes match the selected combination.</p>
+                    <p class="empty-sub">Please select a different category or switch to "All Dishes".</p>
+                </div>
+
+                <!-- Fictional Demo Disclaimer -->
+                <p class="demo-disclaimer-note text-center">
+                    * Disclaimer: The Royal Kitchen is a fictional restaurant demonstration project for web design learning. All menu items, recipes, ingredient claims, and prices are conceptual examples.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating "Back to Filters" Quick-Jump Button on Scroll -->
+    <button type="button" class="back-to-filters-btn" id="back-to-filters-btn" aria-label="Back to menu filters" hidden>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg>
+        <span>Filters</span>
+    </button>
+
+    <!-- ================================================================
+         WEBSITE FOOTER
+         ================================================================ -->
+    <footer class="site-footer" id="site-footer" aria-labelledby="footer-heading">
+        <h2 id="footer-heading" class="sr-only">The Royal Kitchen Footer Information</h2>
+        <div class="container footer-grid">
+            <!-- Col 1: Brand story & location -->
+            <div class="footer-brand-col">
+                <span class="footer-logo">THE ROYAL KITCHEN</span>
+                <span class="footer-tagline">Tradition, Served Beautifully</span>
+                <p class="footer-description">
+                    Honoring the patient, stone-ground slow-cooking rituals of Awadhi & Mughlai culinary heritage in the heart of Kanpur.
+                </p>
+                <div class="footer-location-badge">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    <span>Swaroop Nagar, Kanpur, Uttar Pradesh (Demo Location)</span>
+                </div>
+            </div>
+
+            <!-- Col 2: Demo Operating Hours -->
+            <div class="footer-hours-col">
+                <h3 class="footer-col-title">Operating Hours <small class="demo-tag">(Demo)</small></h3>
+                <ul class="footer-hours-list">
+                    <li>
+                        <span class="day-label">Monday – Friday</span>
+                        <span class="time-label">12:30 PM – 3:30 PM <small>(Lunch)</small></span>
+                        <span class="time-label">7:00 PM – 11:00 PM <small>(Dinner)</small></span>
+                    </li>
+                    <li>
+                        <span class="day-label">Saturday – Sunday</span>
+                        <span class="time-label">12:00 PM – 4:00 PM <small>(Lunch)</small></span>
+                        <span class="time-label">7:00 PM – 11:30 PM <small>(Dinner)</small></span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Demo Contact Details -->
+            <div class="footer-contact-col">
+                <h3 class="footer-col-title">Reservations & Inquiries</h3>
+                <p class="footer-contact-note">All contact details below are for web demonstration purposes:</p>
+                <ul class="footer-contact-list">
+                    <li>
+                        <strong>Phone (Demo):</strong>
+                        <a href="tel:+915120000000" class="footer-link">+91 512 000 0000</a>
+                    </li>
+                    <li>
+                        <strong>Email (Demo):</strong>
+                        <a href="mailto:demo@royalkitchen-kanpur.example.com" class="footer-link">demo@royalkitchen-kanpur.example.com</a>
+                    </li>
+                    <li>
+                        <strong>Table Booking:</strong>
+                        <button type="button" class="btn btn-secondary btn-sm footer-reserve-btn demo-btn" data-action="reserve">
+                            Reserve Table <span class="btn-demo-badge">(Demo)</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Col 4: Quick Navigation Links -->
+            <div class="footer-nav-col">
+                <h3 class="footer-col-title">Navigation</h3>
+                <ul class="footer-nav-list">
+                    <li><a href="#hero-section" class="footer-link">Home Overview</a></li>
+                    <li><a href="#signature-section" class="footer-link">Signature Dum Murgh</a></li>
+                    <li><a href="#story-section" class="footer-link">Our Heritage & Craft</a></li>
+                    <li><a href="#pillars-section" class="footer-link">Culinary Pillars</a></li>
+                    <li><a href="#menu-section" class="footer-link">24-Dish Food Menu</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="container footer-bottom">
+            <p class="copyright-text">
+                © 2026 The Royal Kitchen. All rights reserved. • Fictional Restaurant Demonstration Project
+            </p>
+            <p class="footer-disclaimer">
+                * Disclaimer: The Royal Kitchen is a demonstration website created for web development and design portfolio showcase. All recipes, dishes, prices, hours, and addresses are fictional examples.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript file (deferred to ensure HTML is parsed first) -->
+    <script src="js/main.js" defer></script>
+</body>
+
+</html>
