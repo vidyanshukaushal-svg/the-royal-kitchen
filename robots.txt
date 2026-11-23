@@ -1,0 +1,8 @@
+# The Royal Kitchen — Search Engine Directives
+# Fictional Restaurant Demonstration Project
+User-agent: *
+Allow: /
+Disallow: /assets/screenshots/
+
+# Sitemap location
+Sitemap: https://the-royal-kitchen-blond.vercel.app/sitemap.xml
